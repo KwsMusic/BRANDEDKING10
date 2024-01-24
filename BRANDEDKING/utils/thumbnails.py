@@ -8,7 +8,7 @@ import aiohttp
 from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
                  ImageFont, ImageOps)
 from youtubesearchpython.__future__ import VideosSearch
-import numpy as np
+from BRANDEDKING import app
 from config import YOUTUBE_IMG_URL
 
 
@@ -116,10 +116,10 @@ async def gen_thumb(videoid, user_id):
             image2.paste(circle, (0,0), mask = circle)
 
             # fonts
-            font1 = ImageFont.truetype('BRANDEDKING/font.ttf', 30)
-            font2 = ImageFont.truetype('BRANDEDKING/font2.ttf', 70)
-            font3 = ImageFont.truetype('BRANDEDKING/font2.ttf', 40)
-            font4 = ImageFont.truetype('BRANDEDKING/font2.ttf', 35)
+            font1 = ImageFont.truetype('BRANDEDKING/assets/font2.ttf", 40)
+            font2 = ImageFont.truetype('BRANDEDKING/assets/font2.ttf", 70)
+            font3 = ImageFont.truetype('BRANDEDKING/assets/font2.ttf", 30)
+            font4 = ImageFont.truetype('BRANDEDKING/assets/font.ttf", 30)
 
             image4 = ImageDraw.Draw(image2)
             image4.text((10, 10), "NJ•MUSIC", fill="white", font = font1, align ="left") 
